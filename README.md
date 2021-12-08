@@ -10,7 +10,7 @@ yarn install
 
 ## Solve
 
-Create a new file named the same as the type challenge, copying and pasting the code from the TS playground page.
+Create a new file named the same as the type challenge inside `/solutions`, copying and pasting the code from the TS playground page.
 
 Complete the type challenge.
 
