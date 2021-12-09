@@ -20,13 +20,9 @@
 /* _____________ Your Code Here _____________ */
 
 type TrimLeft<S extends string> =
-  S extends ` ${infer T}`
+  S extends `${' ' | '\n' | '\t'}${infer T}`
   ? TrimLeft<T>
-  : S extends `\n${infer T}`
-    ? TrimLeft<T>
-    : S extends `\t${infer T}`
-      ? TrimLeft<T>
-      : S;
+  : S;
 
 
 /* _____________ Test Cases _____________ */
